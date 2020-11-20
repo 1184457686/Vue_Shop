@@ -3,11 +3,13 @@ import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
 import './assets/fonts/iconfont.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 // 导入全局样式表
 import './assets/css/global.css'
-
 import axios from 'axios'
+
+Vue.component('tree-table', TreeTable)
 // axios.defaults.baseURL = 'http://192.168.43.57:3000/api/private/v1'
 axios.defaults.baseURL = ' http://localhost:3000/api/private/v1'
 axios.interceptors.request.use(config => {
