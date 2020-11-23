@@ -102,7 +102,6 @@ export default {
     async getOrderList() {
       const { data: res } = await this.$http.get('orders', { params: this.queryInfo })
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
-      this.$message.success(res.meta.msg)
       this.total = res.data.total
       this.orderlist = res.data.goods
     },
@@ -116,7 +115,6 @@ export default {
     },
     showBox() {
       this.addressVisible = true
-      //   console.log(123)
     },
     closeAddressForm() {
       this.$refs.addressRef.resetFields()
