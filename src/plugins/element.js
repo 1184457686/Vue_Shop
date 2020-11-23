@@ -35,7 +35,9 @@ import {
   CheckboxGroup,
   Checkbox,
   Upload,
-  Timeline
+  Timeline,
+  Select,
+  Option
 } from 'element-ui'
 
 Vue.use(Button)
@@ -72,6 +74,8 @@ Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
 Vue.use(Timeline)
+Vue.use(Select)
+Vue.use(Option)
 
 // 弹框提示  需要全局挂在
 Vue.prototype.$message = Message

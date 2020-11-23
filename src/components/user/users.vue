@@ -308,6 +308,7 @@ export default {
       const { data: res } = await this.$http.get('roles')
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
       this.roleList = res.data
+      console.log(res.data)
       this.setRoleDialogVisible = true
     },
     async saveRoleInfo() {
