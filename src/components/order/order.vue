@@ -91,7 +91,8 @@ export default {
       },
       citydata,
       activities: [],
-      reverse: false
+      reverse: false,
+      progressInfo: []
     }
   },
   created() {
