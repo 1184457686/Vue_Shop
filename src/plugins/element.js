@@ -37,7 +37,8 @@ import {
   Upload,
   Timeline,
   Select,
-  Option
+  Option,
+  Tree
 } from 'element-ui'
 
 Vue.use(Button)
@@ -76,6 +77,7 @@ Vue.use(Upload)
 Vue.use(Timeline)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Tree)
 
 // 弹框提示  需要全局挂在
 Vue.prototype.$message = Message
